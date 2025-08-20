@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Colorful Login Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff6f61;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 2px solid #fda085;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    .login-box input:focus {
+      border-color: #ff6f61;
+      outline: none;
+      box-shadow: 0 0 5px #ff6f61;
+    }
+
+    .login-box button {
+      width: 100%;
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+      border: none;
+      padding: 15px;
+      border-radius: 8px;
+      font-size: 16px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .login-box button:hover {
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .footer a {
+      color: #ff6f61;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Username" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Log In</button>
+    </form>
+    <div class="footer">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+
+</body>
+</html>
